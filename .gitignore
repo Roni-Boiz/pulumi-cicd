@@ -1,2 +1,2 @@
-/app/bin/
-/app/node_modules/
+/pulumi-template/bin/
+/pulumi-template/node_modules/
