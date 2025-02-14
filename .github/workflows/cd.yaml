@@ -1,9 +1,9 @@
-name: main
+name: CI
 
 on:
-  push:
+  pull_request:
     branches:
-      - dev
+      - main
   workflow_dispatch:
 
 jobs:
@@ -23,9 +23,10 @@ jobs:
         working-directory: ./infra
         run: npm install
 
-      - uses: pulumi/actions@v5
+      - name: Preview the resources
+        uses: pulumi/actions@v5
         with:
-          command: up
+          command: preview
           stack-name: DonR/aws-typescript/dev
           work-dir: ./app
         env:
