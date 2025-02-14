@@ -26,7 +26,7 @@ jobs:
       - name: Preview the resources
         uses: pulumi/actions@v5
         with:
-          command: preview
+          command: up
           stack-name: DonR/aws-typescript/dev
           work-dir: ./pulumi-template
         env:
