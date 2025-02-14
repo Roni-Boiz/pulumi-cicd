@@ -1,0 +1,6 @@
+encryptionsalt: v1:RdjLNBUvhzE=:v1:LM0sU1H57QGGVAO2:KkDVrilO+E+uAB7DIBhDHNj+HTWOYg==
+config:
+  aws-typescript:errorDocument: error.html
+  aws-typescript:indexDocument: index.html
+  aws-typescript:path: ./www
+  aws:region: us-east-1
