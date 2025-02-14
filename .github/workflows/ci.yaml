@@ -1,4 +1,4 @@
-name: main
+name: CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  pulumi-up:
+  pulumi-preview:
     name: pulumi-preview
     runs-on: ubuntu-latest
     steps:
